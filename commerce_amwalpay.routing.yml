@@ -1,0 +1,14 @@
+commerce_amwalpay.callback:
+  path: '/commerce_amwalpay/callback'
+  defaults:
+    _controller: '\Drupal\commerce_amwalpay\Controller\CallbackController::index'
+  requirements:
+    _permission: 'access content'
+
+commerce_amwalpay.execute_smartbox:
+  path: '/commerce_amwalpay/execute_smartbox'
+  defaults:
+    _controller: '\Drupal\commerce_amwalpay\Controller\SmartBoxController::content'
+  requirements:
+    _permission: 'access content'
+
