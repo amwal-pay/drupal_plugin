@@ -1,0 +1,18 @@
+{
+    "name": "amwal-pay/commerce_amwalpay",
+    "description": "AmwalPay for Drupal allows merchants to accept online payments via credit/debit cards and digital wallets using the Amwal Payment Gateway.",
+    "version": "1.0.0",
+    "type": "drupal-module",
+    "license": [
+        "GPL-3.0-only"
+    ],
+    "require": {
+        "drupal/commerce": "~2.25 || ^3"
+    },
+    "homepage": "https://www.amwal-pay.com/",
+    "authors": [
+        {
+          "name": "AmwalPay Plugin Team"
+        }
+      ]
+}
