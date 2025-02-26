@@ -37,7 +37,7 @@
             document.getElementById("Error").style.display = "block";
             return;
         }
-
+        var base_url = '{{ data.base_url }}';
          var callback_url = '{{ data.callback_url }}';
         SmartBox.Checkout.configure = {
             ...data,
@@ -53,7 +53,7 @@
                 console.log("errorCallback Received Data", data);
             },
             cancelCallback: function () {
-                console.log("cancelCallback Received Data", data);
+                 window.location = base_url
             },
         };
         
