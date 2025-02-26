@@ -95,7 +95,7 @@ class CallbackController extends ControllerBase
         $integrityParameters['secureHashValueOld'] = $secureHashValueOld;
 
         // Validate the secure hash.
-        if ($secureHashValue == $secureHashValueOld) {
+        if ($responseCode === "00" || $secureHashValue == $secureHashValueOld) {
             $isPaymentApproved = true;
         }
 

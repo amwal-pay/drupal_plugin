@@ -106,11 +106,13 @@ class SmartBoxController extends ControllerBase
         $reObj->setAbsolute();
         $callback_url = $reObj->toString();
 
+        $base_url = Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString();
         // Store request data and log it.
         $data = [
             'jsonData' => $jsonData,
             'url' => $smartBoxUrl,
             'callback_url' => $callback_url,
+            'base_url' => $base_url
         ];
         AmwalPay::addLogs($debug, $log_path, 'Payment Request: ', print_r($data, 1));
 
