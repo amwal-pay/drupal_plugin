@@ -1,9 +1,9 @@
 # AmwalPay Payment Gateway package for Drupal Commerce
 
 ## Installation
-1. Install the AmwalPay Payment module for Drupal Commerce e-commerce via [amwal-pay/commerce_amwalpay](https://packagist.org/packages/amwal-pay/commerce_amwalpay) composer.
+1. Install the AmwalPay Payment module for Drupal Commerce e-commerce via [amwalpay/commerce_amwalpay](https://packagist.org/packages/amwalpay/commerce_amwalpay) composer.
 ```bash
-composer amwal-pay/commerce_amwalpay
+composer amwalpay/commerce_amwalpay
 ```
 
 2. In the admin panel, Extend tab, search for the Amwal Pay module, select it, and click the install button to install it.
